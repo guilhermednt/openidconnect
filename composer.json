@@ -1,23 +1,30 @@
 {
-	"name": "opauth/openid",
-	"description": "OpenID strategy for Opauth",
-	"keywords": ["authentication","auth","openid"],
-	"homepage": "http://opauth.org",
-	"license": "MIT",
-	"authors": [
-		{
-			"name": "U-Zyn Chua",
-			"email": "chua@uzyn.com",
-			"homepage": "http://uzyn.com"
-		}
-	],
-	"require": {
-		"php": ">=5.2.0",
-		"opauth/opauth": ">=0.2.0"
-	},
-	"autoload": {
-		"psr-0": {
-			"": "."
-		}
-	}
+    "name": "opauth/openid",
+    "description": "OpenID strategy for Opauth",
+    "keywords": ["authentication", "auth", "openid"],
+    "homepage": "http://opauth.org",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "U-Zyn Chua",
+            "email": "chua@uzyn.com",
+            "homepage": "http://uzyn.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/jumbojett/OpenID-Connect-PHP"
+        }
+    ],
+    "require": {
+        "php": ">=5.2.0",
+        "opauth/opauth": ">=0.2.0",
+        "jumbojett/openid-connect-php": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "."
+        }
+    }
 }
